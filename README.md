@@ -61,11 +61,11 @@ Changes required after building the project
  - in file "ext/window/MessageBox.hx" added "import String;" - may have to do this in other files.
  - in "ext/Ext.hx" change method "onReady()", final 2 parameters should be optional. (Line 120)
  - rename "ext/String.hx" to "ext/ExtString.hx" (they're all static and shouldn't be needed in haxe, and it gets confused with the haxe String class)
- 
+
 Licence
 -------
 
-Licence externs: can you license externs?  I dunno... 
+These externs and related haxe code are licenced under BSD.  The ExtJS library itself you can get from Sencha, and is usually available under either GPL or a commercial licence.
 
 
 

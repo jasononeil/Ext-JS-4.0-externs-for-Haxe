@@ -4,3 +4,11 @@
 -cp haxe/
 -main Main
 -js main.js
+
+# documentation
+#--next
+#--no-output
+#--macro ImportAll.run()
+-xml haxelib/haxedoc.xml
+#-cp haxe/
+#-js all.js

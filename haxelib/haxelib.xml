@@ -1,0 +1,6 @@
+<project name="extjs" url="https://github.com/jasononeil/Ext-JS-4.0-externs-for-Haxe" license="BSD">
+    <user name="jason"/>
+    <tag v="js"/>
+    <description>ExtJS</description>
+    <version name="4.0.7.001">Externs for ExtJS 4.0.7.  This is version 001 of the externs, a basic example is compiling and that's about all I'm going to promise for now.  :)  See GitHub if you want to help iron out the bugs, I've tried to make it as easy as possible to rebuild these externs.</version>
+</project>
