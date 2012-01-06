@@ -1,0 +1,7 @@
+# The lib doesn't share code by using "-lib", so I'll just use "-cp"
+# The earlier the "cp", the lower the priority.  Putting "./" second means local files will overwrite ones in the library.
+-cp /usr/lib/haxe/lib/buildjs/1,05/src/ 
+-cp ./ 
+-lib hxJson2 
+-main BuildJS
+-neko ./run.n

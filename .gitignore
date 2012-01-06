@@ -1,5 +1,11 @@
+# Folders which contain too much source that clutters the repos...
 download/*
 jsduck-json/*.json
+
+# Editor files
 *.sublime-workspace
 *.sublime-project
 *~
+
+# Stuff that should just be ignored.
+*.zip

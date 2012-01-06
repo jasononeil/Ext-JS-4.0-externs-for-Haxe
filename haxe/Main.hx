@@ -50,7 +50,7 @@ class Main
 	                { 
 	                	var name = "NAMEVARIABLEHERE";
 	                	var message = Std.format("Hello $name, thanks for giving us your password!  (just kidding...)");
-	                	
+
 	                    Ext.Msg.alert('Status', message, function(btn, text)
                     	{
 						   if (btn == 'ok')
@@ -112,16 +112,6 @@ class Main
 	            }] 
 		    });
 		 	
-		 	// Create something else, anything
-		 	var slider = new ext.slider.Single({
-			    width: 200,
-			    value: 50,
-			    increment: 10,
-			    minValue: 0,
-			    maxValue: 100,
-			    renderTo: Ext.getBody()
-			});
-		 
 			// This just creates a window to wrap the login form. 
 			// The login object is passed to the items collection.       
 		    var win = new ext.window.Window({
@@ -132,7 +122,7 @@ class Main
 		        resizable: false,
 		        plain: true,
 		        border: false,
-		        items: [login,slider]
+		        items: [login]
 			});
 			win.show();
 		});

@@ -2,7 +2,6 @@ package ext.window;
 
 import ext.window.MessageBox;
 import ext.window.Window;
-import String;
 
 @:native ("Ext.window.MessageBox")
 extern class MessageBox extends Window {

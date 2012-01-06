@@ -253,8 +253,7 @@ Main.main = function() {
 				}
 			});
 		}}]});
-		var slider = new Ext.slider.Single({ width : 200, value : 50, increment : 10, minValue : 0, maxValue : 100, renderTo : Ext.getBody()});
-		var win = new Ext.window.Window({ layout : "fit", width : 300, height : 150, closable : false, resizable : false, plain : true, border : false, items : [login,slider]});
+		var win = new Ext.window.Window({ layout : "fit", width : 300, height : 150, closable : false, resizable : false, plain : true, border : false, items : [login]});
 		win.show();
 	});
 }

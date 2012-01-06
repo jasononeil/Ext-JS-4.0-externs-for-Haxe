@@ -59,8 +59,9 @@ Changes required after building the project
  - commented out "name" property in ext/env/OS.hx
  - removed package "core" in "import ext.core.Element;" in ext/AbstractComponent.hx
  - in file "ext/window/MessageBox.hx" added "import String;" - may have to do this in other files.
-
-
+ - in "ext/Ext.hx" change method "onReady()", final 2 parameters should be optional. (Line 120)
+ - rename "ext/String.hx" to "ext/ExtString.hx" (they're all static and shouldn't be needed in haxe, and it gets confused with the haxe String class)
+ 
 Licence
 -------
 
