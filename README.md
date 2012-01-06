@@ -31,18 +31,22 @@ If you want to help with the effort, here are the steps for getting this far:
 * Build a sample project
 
 **To recompile buildjs**
+
     # I run this from: /usr/lib/haxe/lib/buildjs/1,05/src/
     haxe -lib hxJson2 -neko ../run.n -main BuildJS
 
 **Run jsduck to generate the JSON documentation**
+
     # Run this from the root of the repository
     jsduck ext-4.0.7/src --export=full --output jsduck-json/ --images download/docs/images --pretty-json
 
 **Run buildjs to generate the haxe externs**
+
     # Run this from the root of the repository
     haxelib run buildjs externs -senchatouch jsduck-json/ haxe/
 
 **Build example**
+
     # Run this from the root of the repository
     haxe build.hxml
 
