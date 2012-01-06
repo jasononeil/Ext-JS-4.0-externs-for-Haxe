@@ -1,3 +1,4 @@
 #!/bin/sh
 
-# Submit to haxelib 
+# Submit to haxelib
+haxelib submit haxelib/extjs.zip 
