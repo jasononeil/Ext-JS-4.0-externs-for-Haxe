@@ -1,0 +1,5 @@
+download/*
+jsduck-json/*.json
+*.sublime-workspace
+*.sublime-project
+*~
