@@ -23,17 +23,17 @@ Steps for getting this far
 
 If you want to help with the effort, here are the steps for getting this far:
 
-* Build my own version of the haxelib "buildjs" with changes to the "senchatouch" generator
 * Download the latest ext-4.* source
 * Use jsduck to create the JSON documentation for Ext JS
 * Use buildjs to create the externs from the JSON files
 * Make some changes that are required for the library to compile in haxe
 * Build a sample project
 
-**To recompile buildjs**
+Most of these can be done by some handy shell scripts:
 
-    # I run this from: /usr/lib/haxe/lib/buildjs/1,05/src/
-    haxe -lib hxJson2 -neko ../run.n -main BuildJS
+* ./generateExterns.sh to download extjs, and generate externs using ''jsduck'' and ''buildjs''
+* Make custom changes to a few files, as documented below
+* ./packageForHaxeLib.sh to package the new externs for haxelib and submit them.
 
 **Run jsduck to generate the JSON documentation**
 
@@ -43,7 +43,7 @@ If you want to help with the effort, here are the steps for getting this far:
 **Run buildjs to generate the haxe externs**
 
     # Run this from the root of the repository
-    haxelib run buildjs externs -senchatouch jsduck-json/ haxe/
+    haxelib run buildjs externs -extjs jsduck-json/ haxe/
 
 **Build example**
 
@@ -58,7 +58,7 @@ Changes required after building the project
  - commented out "name" property in ext/env/Browser.hx
  - commented out "name" property in ext/env/OS.hx
  - removed package "core" in "import ext.core.Element;" in ext/AbstractComponent.hx
- - in file "ext/window/MessageBox.hx" added "import String;" - may have to do this in other files.
+ - rename "ext/String.hx" to "ExtString.hx" - to stop it getting confused and expecting this instead of a normal string.
  - in "ext/Ext.hx" change method "onReady()", final 2 parameters should be optional. (Line 120)
  - rename "ext/String.hx" to "ext/ExtString.hx" (they're all static and shouldn't be needed in haxe, and it gets confused with the haxe String class)
 
