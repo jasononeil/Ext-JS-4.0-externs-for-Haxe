@@ -1,3 +1,20 @@
+This Repo is no longer maintained (IMPORTANT)
+=============================================
+
+To anyone coming looking for ExtJS externs for Haxe - be warned - I am not maintaining this.  I only ever got this working to a very basic level and there were issues with ExtJS using a different object model to Haxe, and I never ended up using it in my project so these issues remained unresolved.
+
+I've left the github project up in case anyone wants to take it further, and it seems some people have had some luck:
+
+    https://groups.google.com/forum/#!topic/haxelang/JUzl1WNwHmU
+
+you could try contacting them directly.  I think this is the way to go: fix buildjs to build better externs, and then use a custom JS generator to work with ExtJS's object model... but it's not an effort I'm likely to be part of.  
+
+---
+---
+---
+
+
+
 Ext JS 4.0 Externs for haXe
 ===========================
 
